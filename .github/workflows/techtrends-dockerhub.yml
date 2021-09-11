@@ -30,6 +30,6 @@ jobs:
         uses: docker/build-push-action@v2.7.0
         with:
           context: .
-          file: ./Dockerfile
+          file: ./project/Dockerfile
           push: true
           tags: wshaari/techtrends:latest
