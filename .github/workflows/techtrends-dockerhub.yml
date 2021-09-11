@@ -12,6 +12,13 @@ jobs:
       matrix:
         python-version: [2.7]
     steps:
+
+      - name: Set up QEMU 
+        uses: docker/setup-qemu-action@v1
+
+      - name: Set up Docker buildx
+        uses: docker/setup-buildx-action@v1
+      
       -
         name: Login to DockerHub
         uses: docker/login-action@v1 
@@ -24,6 +31,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: ./project
-          file: Dockerfile
+          file: ./Dockerfile
           push: true
           tags: wshaari/techtrends:latest
