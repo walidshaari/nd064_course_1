@@ -1,5 +1,5 @@
 name: "TechTrends - Package with Docker"
-  uses: docker/build-push-action@v2.7.0
+uses: docker/build-push-action@v2.7.0
 
 on: 
   push:
