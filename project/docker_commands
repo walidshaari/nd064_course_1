@@ -7,7 +7,7 @@
 ## Docker commands used to run the application
 # TODO: insert the docker run command
  
-  docker run -name techtrends -d -p 7111:3111 quay.io/walidshaari/techtrends:v0.01
+  docker run --name techtrends -d -p 7111:3111 quay.io/walidshaari/techtrends:v0.01
   
 ## Docker commands used to get the application logs
 # TODO: insert the docker logs command
