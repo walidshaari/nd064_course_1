@@ -1,11 +1,36 @@
 ## Docker commands used to build the application 
 # TODO: insert the docker build command
 
+  ## I build and tag at the same time, to reduce the tag operation, also I use quay to get rid of docker hub limits
+  docker build --no-cache -t quay.io/walidshaari/techtrends:v0.01 . 
+  
 ## Docker commands used to run the application
 # TODO: insert the docker run command
-
+ 
+  docker run -name techtrends -d -p 7111:3111 quay.io/walidshaari/techtrends:v0.01
+  
 ## Docker commands used to get the application logs
 # TODO: insert the docker logs command
 
+  # one time logs
+   docker logs techtrends
+
+  # follow the logs
+  docker logs -f techtrends
+
 ## Logs from the container running the TechTrends application
-# TODO: paste logs from the Docker container 
+# TODO: paste logs from the Docker container
+
+2021-09-11 08:35:06,233 - werkzeug -  * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+2021-09-11 08:35:26,445 - werkzeug - 172.17.0.1 - - [11/Sep/2021 08:35:26] "GET / HTTP/1.1" 200 -
+2021-09-11 08:35:28,230 - app - Article 2020 CNCF Annual Report retrieved,
+2021-09-11 08:35:28,244 - werkzeug - 172.17.0.1 - - [11/Sep/2021 08:35:28] "GET /1 HTTP/1.1" 200 -
+2021-09-11 08:35:29,727 - app - About Us page retrieved
+2021-09-11 08:35:29,736 - werkzeug - 172.17.0.1 - - [11/Sep/2021 08:35:29] "GET /about HTTP/1.1" 200 -
+2021-09-11 08:35:30,699 - werkzeug - 172.17.0.1 - - [11/Sep/2021 08:35:30] "GET /create HTTP/1.1" 200 -
+2021-09-11 08:35:36,883 - app - New article created new post 
+2021-09-11 08:35:36,885 - werkzeug - 172.17.0.1 - - [11/Sep/2021 08:35:36] "POST /create HTTP/1.1" 302 -
+2021-09-11 08:35:36,892 - werkzeug - 172.17.0.1 - - [11/Sep/2021 08:35:36] "GET / HTTP/1.1" 200 -
+2021-09-11 08:35:51,943 - app - A non-existing article is accessed and a 404 page is returned
+2021-09-11 08:35:51,947 - werkzeug - 172.17.0.1 - - [11/Sep/2021 08:35:51] "GET /101 HTTP/1.1" 404 -
+ 
