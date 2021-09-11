@@ -15,6 +15,7 @@ jobs:
       -
         name: Checkout
         uses: actions/checkout@v2
+          path: ./project
       -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v1
