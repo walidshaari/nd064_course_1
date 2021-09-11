@@ -1,0 +1,24 @@
+# Default values for techtrends.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+namespace: prod
+
+replicaCount: 5
+
+image:
+  pullPolicy: Always
+
+
+service:
+  port: 7111
+
+resources:
+   limits:
+     cpu: 500m
+     memory: 256Mi
+   requests:
+     cpu: 350m
+     memory: 128Mi
+
+

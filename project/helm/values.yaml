@@ -1,0 +1,38 @@
+# Default values for techtrends.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+namespace: sandbox
+
+replicaCount: 1
+
+image:
+  repository: wshaari/techtrends
+  pullPolicy: IfNotPresent
+  tag: "latest"
+
+
+service:
+  type: ClusterIP
+  port: 4111
+  targetPort: 3111
+  protocol: TCP
+  type: ClusterIP
+
+resources:
+   limits:
+     cpu: 500m
+     memory: 128Mi
+   requests:
+     cpu: 250m
+     memory: 64Mi
+
+containerPort: 3111
+
+livenessProbe:
+  path: /healthz
+  port: 3111
+readinessProbe:
+  path: /healthz
+  port: 3111
+
