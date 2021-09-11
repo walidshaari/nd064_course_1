@@ -1,0 +1,268 @@
+INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2021 22:41:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2021 22:41:39] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2021 22:41:41] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2021 22:41:42] "GET /3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2021 22:41:44] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2021 22:41:45] "GET /create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2021 22:41:50] "POST /create HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2021 22:41:50] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2021 22:41:54] "GET /7 HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2021 22:44:22] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2021 22:44:23] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2021 22:44:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2021 22:44:25] "GET /3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2021 22:44:26] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2021 22:44:28] "GET /7 HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2021 22:45:24] "GET / HTTP/1.1" 200 -
+ERROR:app:Exception on /2 [GET]
+Traceback (most recent call last):
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/wal/code/gitrepos/nd064_course_1/project/techtrends/app.py", line 42, in post
+    app.logger.info('Article '+post+' retrieved!')
+TypeError: can only concatenate str (not "sqlite3.Row") to str
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2021 22:45:27] "GET /2 HTTP/1.1" 500 -
+ERROR:app:Exception on /1 [GET]
+Traceback (most recent call last):
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/wal/code/gitrepos/nd064_course_1/project/techtrends/app.py", line 42, in post
+    app.logger.info('Article '+post+' retrieved!')
+TypeError: can only concatenate str (not "sqlite3.Row") to str
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2021 22:45:35] "GET /1 HTTP/1.1" 500 -
+ERROR:app:Exception on /3 [GET]
+Traceback (most recent call last):
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/wal/code/gitrepos/nd064_course_1/project/techtrends/app.py", line 42, in post
+    app.logger.info('Article '+post+' retrieved!')
+TypeError: can only concatenate str (not "sqlite3.Row") to str
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2021 22:45:42] "GET /3 HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:app:Article {{ post }} retrieved!
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2021 22:46:18] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2021 22:46:20] "GET / HTTP/1.1" 200 -
+INFO:app:Article {{ post }} retrieved!
+INFO:werkzeug:127.0.0.1 - - [05/Sep/2021 22:46:21] "GET /3 HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 09:55:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 09:55:21] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 09:55:21] "GET /favicon.ico HTTP/1.1" 404 -
+ERROR:app:Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/wal/code/gitrepos/nd064_course_1/project/techtrends/app.py", line 67, in metrics
+    response=json.dumps({"db_connection_count": 1, "post_count": post_count() }),
+  File "/home/wal/code/gitrepos/nd064_course_1/project/techtrends/app.py", line 61, in post_count
+    return curosr.fetchone()[0]
+NameError: name 'curosr' is not defined
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 09:55:27] "GET /metrics HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 09:56:18] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 09:57:22] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 09:57:23] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 09:57:27] "GET /create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 09:57:30] "POST /create HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 09:57:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 09:57:44] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 10:02:12] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 10:02:13] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+ERROR:app:Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/wal/code/gitrepos/nd064_course_1/project/techtrends/app.py", line 72, in metrics
+    response=json.dumps({"db_connection_count": db_connection_count, "post_count": post_count() }),
+  File "/home/wal/code/gitrepos/nd064_course_1/project/techtrends/app.py", line 63, in post_count
+    connection = get_db_connection()
+  File "/home/wal/code/gitrepos/nd064_course_1/project/techtrends/app.py", line 16, in get_db_connection
+    db_connection_count +=1
+UnboundLocalError: local variable 'db_connection_count' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 10:11:43] "GET /metrics HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+ERROR:app:Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/wal/code/gitrepos/nd064_course_1/project/techtrends/app.py", line 74, in metrics
+    response=json.dumps({"db_connection_count": db_connection_count, "post_count": post_count() }),
+  File "/home/wal/code/gitrepos/nd064_course_1/project/techtrends/app.py", line 65, in post_count
+    connection = get_db_connection()
+  File "/home/wal/code/gitrepos/nd064_course_1/project/techtrends/app.py", line 17, in get_db_connection
+    db_connection_count += 1
+UnboundLocalError: local variable 'db_connection_count' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 10:13:05] "GET /metrics HTTP/1.1" 500 -
+ERROR:app:Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/wal/code/gitrepos/nd064_course_1/project/techtrends/app.py", line 74, in metrics
+    response=json.dumps({"db_connection_count": db_connection_count, "post_count": post_count() }),
+  File "/home/wal/code/gitrepos/nd064_course_1/project/techtrends/app.py", line 65, in post_count
+    connection = get_db_connection()
+  File "/home/wal/code/gitrepos/nd064_course_1/project/techtrends/app.py", line 17, in get_db_connection
+    db_connection_count += 1
+UnboundLocalError: local variable 'db_connection_count' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 10:13:06] "GET /metrics HTTP/1.1" 500 -
+ERROR:app:Exception on /metrics [GET]
+Traceback (most recent call last):
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/wal/code/gitrepos/nd064_course_1/project/techtrends/app.py", line 74, in metrics
+    response=json.dumps({"db_connection_count": db_connection_count, "post_count": post_count() }),
+  File "/home/wal/code/gitrepos/nd064_course_1/project/techtrends/app.py", line 65, in post_count
+    connection = get_db_connection()
+  File "/home/wal/code/gitrepos/nd064_course_1/project/techtrends/app.py", line 17, in get_db_connection
+    db_connection_count += 1
+UnboundLocalError: local variable 'db_connection_count' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 10:13:06] "GET /metrics HTTP/1.1" 500 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/wal/code/gitrepos/nd064_course_1/project/techtrends/app.py", line 36, in index
+    connection = get_db_connection()
+  File "/home/wal/code/gitrepos/nd064_course_1/project/techtrends/app.py", line 17, in get_db_connection
+    db_connection_count += 1
+UnboundLocalError: local variable 'db_connection_count' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 10:13:19] "GET / HTTP/1.1" 500 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wal/.local/lib/python3.9/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/wal/code/gitrepos/nd064_course_1/project/techtrends/app.py", line 36, in index
+    connection = get_db_connection()
+  File "/home/wal/code/gitrepos/nd064_course_1/project/techtrends/app.py", line 17, in get_db_connection
+    db_connection_count += 1
+UnboundLocalError: local variable 'db_connection_count' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 10:13:22] "GET / HTTP/1.1" 500 -
+INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 10:14:28] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 10:14:28] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 10:14:32] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 10:14:35] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 10:14:35] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 10:14:36] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 10:15:59] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 10:16:00] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 10:16:01] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 10:16:02] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 10:16:02] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 10:16:03] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 10:16:03] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 10:16:03] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 10:16:03] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 10:16:03] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 10:16:04] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 10:16:04] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 10:16:04] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 10:16:04] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Sep/2021 10:16:05] "GET /metrics HTTP/1.1" 200 -
