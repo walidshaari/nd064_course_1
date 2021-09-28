@@ -4,7 +4,7 @@
 
 namespace: prod
 
-replicaCount: 5
+replicaCount: 10
 
 image:
   pullPolicy: Always
@@ -15,7 +15,7 @@ service:
 
 resources:
    limits:
-     cpu: 500m
+     cpu: 1500m
      memory: 256Mi
    requests:
      cpu: 350m
