@@ -4,7 +4,7 @@
 
 namespace: dxb-prod
 
-replicaCount: 10
+replicaCount: 1
 
 image:
   pullPolicy: Always
