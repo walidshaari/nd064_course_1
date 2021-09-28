@@ -4,7 +4,7 @@
 
 namespace: dxb-prod
 
-replicaCount: 3
+replicaCount: 10
 
 image:
   pullPolicy: Always
@@ -18,7 +18,7 @@ resources:
      cpu: 1500m
      memory: 256Mi
    requests:
-     cpu: 350m
+     cpu: 1500m
      memory: 128Mi
 
 
